@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500&display=swap');
+.accessible-hero {
+    position: relative;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .accessible-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.6) 40%,
+      rgba(0, 0, 0, 0.2) 100%
+    );
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  }
+  
+  .accessible-hero-content {
+    position: relative;
+    color: white;
+    text-align: left;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .accessible-hero-subtitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+    opacity: 0.85;
+  }
+  
+  .accessible-hero-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+  
+  .accessible-hero-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .accessible-hero-btn:hover {
+    opacity: 0.8;
+  }
+  
+  .play-icon {
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 18px;
+    color: #f5b400;
+  }
+
+  .investment-keywords {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px; /* space between items */
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .investment-keywords .triangle {
+    color: #fbbf24; /* golden yellow */
+    font-size: 1.4rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .accessible-hero {
+      height: 350px;
+    }
+  
+    .accessible-hero-content h1 {
+      font-size: 26px;
+    }
+  }
+  

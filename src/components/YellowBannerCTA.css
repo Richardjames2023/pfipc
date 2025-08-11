@@ -1,0 +1,49 @@
+.yellow-bannerCTA {
+    background-color: #00592e;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .yellow-banner-content {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .yellow-banner h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color:#fff;
+    /* color: #0b1b40; */
+    margin-bottom: 20px;
+  }
+
+  .yellow-banner-content-subtileCTA{
+    color:#fff;
+  }
+  
+  .cta-btn {
+    background-color: #0b1b40;
+    color: white;
+    padding: 14px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #092030;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .yellow-banner h2 {
+      font-size: 1.4rem;
+    }
+  }
+  

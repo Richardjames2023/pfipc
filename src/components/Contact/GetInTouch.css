@@ -1,0 +1,155 @@
+/* General Styling */
+.get-in-touch-section {
+    display: flex;
+    gap: 60px;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+  
+  /* Left Column - Contact Info */
+  .contact-info {
+    width: 40%;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #004d00;
+    margin-bottom: 15px;
+  }
+  
+  .contact-description {
+    font-size: 1.05rem; /* Slightly larger font size for readability */
+    color: #fff; /* White color for better visibility */
+    line-height: 1.8; /* Increased line-height for better readability */
+    max-width: 90%; /* Allow more space for the text */
+    margin-bottom: 25px;
+    font-weight: 400; /* Ensure a normal weight for easy reading */
+  }
+  
+  
+  /* Contact Details */
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+  }
+  
+  .contact-details p {
+    font-size: 1rem;
+    color: #444;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  .contact-details strong {
+    color: #004d00;
+    margin-right: 10px;
+    font-weight: 600;
+  }
+  
+  .contact-details p svg {
+    margin-right: 8px;
+    color: #004d00;
+  }
+  
+  /* Right Column - Contact Form */
+  .contact-form {
+    width: 60%;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .form-row.full-width {
+    width: 100%;
+  }
+  
+  /* Input Fields Styling */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #004d00;
+    background-color: #fff;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  /* Terms and Conditions Checkbox */
+  .terms {
+    font-size: 0.9rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+  }
+  
+  .terms input {
+    margin-right: 8px;
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    background-color: #004d00;
+    color: #fff;
+    padding: 14px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #00361a;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .get-in-touch-section {
+      flex-direction: column;
+    }
+  
+    .contact-info,
+    .contact-form {
+      width: 100%;
+    }
+  
+    .form-row {
+      flex-direction: column;
+    }
+  }
+  

@@ -1,0 +1,39 @@
+/* src/components/Newsletter.css */
+
+.newsletter-section {
+    background-color: #004225;
+    color: white;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .newsletter-section h3 {
+    font-size: 1.5em;
+  }
+  
+  .newsletter-section p {
+    margin: 10px 0 20px;
+  }
+  
+  .newsletter-input {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .newsletter-input input[type="email"] {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .newsletter-input button {
+    padding: 10px 20px;
+    background-color: #D41A1A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

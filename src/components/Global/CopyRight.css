@@ -1,0 +1,34 @@
+/* Main footer styling */
+.copyright {
+    background: linear-gradient(to right, #014421, #026837); /* Gradient background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  /* Footer links styling */
+  .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: #a5d6a7; /* Slightly lighter color on hover */
+  }
+  
+  /* Footer text styling */
+  .footer-text {
+    font-weight: 500;
+  }
+  

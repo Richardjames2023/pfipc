@@ -1,0 +1,121 @@
+.GoverningCouncil-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 24px 72px 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+    text-align: center;
+  }
+  
+  .GoverningCouncil-title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+  }
+  
+  .GoverningCouncil-description {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+  }
+  
+  .GoverningCouncil-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    justify-items: center;
+  }
+  
+  .GoverningCouncil-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 280px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .GoverningCouncil-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+  
+  .GoverningCouncil-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .GoverningCouncil-captionBox {
+    display: flex;
+    align-items: center;
+    background-color: #0B4A00;
+    padding: 16px 12px;
+    height: 80px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .GoverningCouncil-caption {
+    margin: 0;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #fff;
+    line-height: 1.3;
+    white-space: normal;
+  }
+  
+  /* 📱 Responsive Adjustments */
+  @media (max-width: 768px) {
+    .GoverningCouncil-title {
+      font-size: 1.5rem;
+    }
+  
+    .GoverningCouncil-description {
+      font-size: 0.95rem;
+      padding: 0 10px;
+    }
+  
+    .GoverningCouncil-card {
+      width: 90%; /* Fill most of the screen width on smaller devices */
+    }
+  
+    .GoverningCouncil-image {
+      height: 220px; /* Slightly shorter for mobile */
+    }
+  
+    .GoverningCouncil-caption {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .GoverningCouncil-title {
+      font-size: 1.3rem;
+    }
+  
+    .GoverningCouncil-description {
+      font-size: 0.9rem;
+    }
+  
+    .GoverningCouncil-image {
+      height: 200px;
+    }
+  
+    .GoverningCouncil-card {
+      width: 100%; /* Use full width on extra small devices */
+    }
+  }
+  
+  

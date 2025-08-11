@@ -1,0 +1,54 @@
+.yellow-banner {
+    background-color: #006b35; /* Yellow */
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .yellow-banner-content {
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  .yellow-banner-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #0b1b40; /* Dark navy for contrast */
+  }
+  
+  .yellow-banner-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .yellow-banner-btn {
+    background-color: #0b1b40;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .yellow-banner-btn:hover {
+    background-color: #092035;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .yellow-banner-title {
+      font-size: 1.5rem;
+    }
+  
+    .yellow-banner-text {
+      font-size: 0.95rem;
+    }
+  }
+  

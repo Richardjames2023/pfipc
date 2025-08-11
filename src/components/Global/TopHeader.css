@@ -1,0 +1,54 @@
+/* TopHeader.css */
+
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.logo-section {
+  display: flex;
+  flex-direction: column; /* Stack logo and text vertically */
+  align-items: center;
+}
+
+.logo {
+  height: 60px; /* Increase the logo size */
+  margin-bottom: 5px; /* Space between logo and text */
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #b22222; /* Red color for "The Presidency" text */
+  text-align: center;
+}
+
+.info-section {
+  display: flex;
+  gap: 30px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333333;
+}
+
+.icon {
+  color: #006400; /* Dark green color for icons */
+  margin-right: 5px;
+}
+
+.info-item a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.info-item a:hover {
+  text-decoration: underline;
+}

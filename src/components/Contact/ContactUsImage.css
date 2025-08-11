@@ -1,0 +1,45 @@
+/* Background Banner Styling */
+.contact-us-banner {
+    background-image: url('./aboutcarousel.jpg'); /* Replace with actual path to your image */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+  }
+  
+  .contact-us-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better text visibility */
+    z-index: 1;
+  }
+  
+  .contact-us-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .contact-us-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .contact-us-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #f0f0f0;
+  }
+  

@@ -1,0 +1,155 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Section Wrapper */
+.combined-section {
+  background-color: #fff;
+  padding: 80px 20px;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container Layout */
+.combined-container {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  max-width: 1200px;
+  width: 90%;
+  align-items: flex-start;
+}
+
+/* Shared Text Block */
+.text-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Typography Styles */
+.subtitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #007a2f;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.right-side-text{
+    padding-top:100px;
+}
+
+.description {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* Key Protections Section */
+.key-protections-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.protection-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #eee;
+}
+
+.protection-item {
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.protection-item:hover {
+  background-color: #f4f4f4;
+}
+
+.protection-header {
+  display: flex;
+  align-items: center;
+}
+
+.protection-number {
+  font-weight: bold;
+  color: #e60000;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.protection-title {
+  flex: 1;
+  font-weight: 500;
+  color: #222;
+}
+
+.arrow {
+  font-size: 1.2rem;
+  color: #e60000;
+  transition: transform 0.3s ease;
+}
+
+.arrow.active {
+  transform: rotate(90deg);
+}
+
+.protection-description {
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 8px;
+  padding-left: 30px;
+}
+
+/* Button */
+.learn-more-button {
+  background-color: #007a2f;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.learn-more-button:hover {
+  background-color: #cc0000;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .combined-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .description,
+  .protection-description {
+    font-size: 0.95rem;
+  }
+}

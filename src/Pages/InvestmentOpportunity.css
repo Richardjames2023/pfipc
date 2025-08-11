@@ -1,0 +1,42 @@
+/* InvestmentOpportunities.css */
+
+.investment-opportunities {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333333; /* Dark gray text */
+    font-family: Arial, sans-serif;
+  }
+  
+  .investment-opportunities h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #004d00; /* Dark green text */
+    text-align: center;
+    animation: fadeIn 1s ease-in-out, pulse 2s infinite;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Pulse animation */
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+  
