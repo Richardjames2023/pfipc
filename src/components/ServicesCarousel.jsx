@@ -17,9 +17,9 @@ const ServicesCarousel = () => {
     <div className="service_carousel-container">
       <div className="carousel-track">
         {repeatedServices.map((service, idx) => (
-          <a href="#" className="carousel-item" key={idx}>
-            {service}
-          </a>
+        <a href="/services" className="carousel-item" key={idx}>
+        {service}
+        </a>
         ))}
       </div>
     </div>
