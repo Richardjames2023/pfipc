@@ -1,71 +1,189 @@
-.new_navbar{
-    display:flex; 
-    align-items: center;
-    justify-content: center;
+/* ===== NAVBAR BASE ===== */
+.new_navbar {
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff;
 }
+
 .new_navbar_container {
-    width:90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
-  }
-  .new_navbar_header-top-left{
-    width:58%;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-  .new_nav_links{
-    display: flex;
-    gap: 30px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .new_nav-link{
-    position: relative;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: color 0.3s ease;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.new_navbar_header-top-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  height: 50px;
+  object-fit: contain;
+  display: block;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+/* Hide desktop nav on mobile/tablet */
+.desktop-nav {
+  display: none;
+}
+
+/* Show desktop nav on desktop */
+@media (min-width: 1025px) {
+  .desktop-nav {
+    display: block;
   }
 
-  .new_nav-link a {
-    color: #000;
-    padding:2px 6px;
-    font-size:17px;
-    font-weight: bold;
-    text-decoration: none;
+  /* Hide hamburger icon on desktop */
+  .hamburger {
+    display: none;
   }
-  .new_nav-link:hover a,
+
+  /* Hide mobile menu overlay on desktop */
+  .menu-overlay {
+    display: none !important;
+  }
+
+  /* Show header-right on desktop */
+  .header-top-right_navbar {
+    display: flex;
+  }
+}
+
+/* On mobile/tablet (max-width: 1024px), header right is hidden (your existing CSS) */
+
+
+.new_nav_links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.new_nav_links li a {
+  color: #000;
+  padding: 2px 6px;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.new_nav-link:hover a,
 .new_nav-link.active a {
   color: #006b35;
   background-color: #ebefee;
 }
-  .new_nav-link.active::after {
-    content: '';
+
+.new_nav-link.active::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: #006b35;
+  margin: 5px auto 0;
+}
+
+.header-top-right_navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.headrr_top-right_contact-button {
+  background-color: #006b35;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* ===== HAMBURGER MENU ICON ===== */
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+/* ===== MENU OVERLAY ===== */
+.menu-overlay {
+  position: fixed;
+  top: 9%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+/* ===== MOBILE/TABLET MENU ===== */
+@media (max-width: 1024px) {
+  .hamburger {
     display: block;
-    width: 50%;
-    height: 2px;
-    background-color:#006b35;
-    margin: 5px auto 0;
   }
-  .header-top-right_navbar{
-    display:flex;
+
+  .new_navbar_header-top-left {
+    width: 100%;
     justify-content: space-between;
   }
-  .headrr_top-right_contact-button{
-    background-color: #006b35; /* Red background */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
+
+  .new_nav_links {
+    position: fixed;
+    top: 7%;
+    right: -260px; /* Start offscreen */
+    height: 100%;
+    width: 260px;
+    background: white;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 30px;
+    display: flex;
+    z-index: 1000;
+    transition: right 0.3s ease-in-out;
   }
+
+  .new_nav_links.open {
+    right: 0; /* Slide into view */
+  }
+
+  .header-top-right_navbar {
+    display: none;
+  }
+
+  .mobile-contact a {
+    background-color: #006b35;
+    height: 40px;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .new_nav-link.active::after {
+    display: none;
+  }
+  .menu-overlay {
+    top: 7%;
+  }
+}
+

@@ -15,8 +15,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* <TopHeader />
-        <NavBar /> */}
         <NewNavbar/>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -26,7 +24,6 @@ function App() {
           <Route path="/investment-opportunities" element={<InvestmentOpportunitiesPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
-        {/* <HeroSection /> */}
         <Footer />
         <CopyRight />
       </div>

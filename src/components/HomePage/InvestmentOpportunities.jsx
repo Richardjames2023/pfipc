@@ -70,7 +70,7 @@ const InvestmentOpportunities = () => {
   }, []);
 
   return (
-    <section className="investment-opportunities">
+    <section className="investment-one-opportunities">
       <div className="investment_container">
         <div className="intro" data-aos="fade-up">
           <h2>Investment Opportunities</h2>

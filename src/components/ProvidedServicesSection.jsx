@@ -115,7 +115,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="services-2-section">
+    <section className="provided-services-2-section">
       <div className="services-2-container">
         <h2 className="section-title">Our Comprehensive Services</h2>
         <p className="services-2-section-description">
