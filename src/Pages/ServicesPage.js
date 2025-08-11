@@ -1,6 +1,4 @@
 import React from 'react';
-
-import ServiceImage from '../components/Services/ServiceImage';
 import ProvidedServicesSection from "../components/ProvidedServicesSection"
 import Carousel from '../components/Global/Carousel';
 import coinPlant from "../assets/pfipc.jpg";

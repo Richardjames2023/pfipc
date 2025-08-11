@@ -3,8 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaGlobe, FaArrowUp } from 'react-icons/fa';
 import './NewNavbar.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
 const NewNavbar = () => {
 
