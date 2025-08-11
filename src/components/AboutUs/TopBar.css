@@ -1,0 +1,74 @@
+/* TopBar container */
+.topbar {
+    display: flex;
+    justify-content: center; /* Centers all items horizontally */
+    align-items: center;
+    padding: 10px 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    letter-spacing: 6px; /* Slight letter spacing for a modern look */
+  }
+  
+  /* TopBar links */
+  .topbar-link {
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    margin: 0 40px; /* Reduce margin to bring items closer */
+  }
+  
+  .topbar-link:hover {
+    color: #004d00; /* Hover color */
+  }
+  
+  .topbar-link.active {
+    color: #004d00; /* Active color */
+    font-weight: bold;
+  }
+  
+  /* Optional - Adjust spacing for smaller screens */
+  @media (max-width: 768px) {
+    .topbar-link {
+      margin: 0 10px; /* Further reduce spacing on smaller screens */
+    }
+  }
+
+  /* TopBar container */
+.topbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    letter-spacing: 1px;
+    position: sticky;   /* Make the TopBar sticky */
+    top: 0;             /* Position it at the top of the viewport */
+    z-index: 1000;      /* Ensure it stays above other elements */
+  }
+
+  .topbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    letter-spacing: 1px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for visual separation */
+  }
+  
+  

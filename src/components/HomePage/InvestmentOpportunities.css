@@ -1,0 +1,390 @@
+/* .investment-opportunities {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.header-section {
+  background: linear-gradient(to right, #2c6e49, #a65021);
+  padding: 60px 20px;
+  color: white;
+  position: relative;
+  width: 75vw; 
+  max-width: 1200px;
+  border-radius: 10px 10px 0 0;
+  margin: 30px auto 0;
+}
+
+.header-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left; 
+}
+
+.header-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: left; 
+}
+
+.header-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 20px 0 0;
+  text-align: left; 
+}
+
+.overlapping-title {
+  position: relative;
+  top: 60px; 
+  margin-left: 20px; 
+  background: white;
+  padding: 5px 10px;
+  z-index: 2;
+  display: inline-block;
+  text-align: left;
+  width: auto;
+}
+
+.overlapping-title h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #004d00;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.divider {
+  position: relative;
+  height: 1px;
+  background-color: #ddd;
+  margin: 5px auto 10px; 
+  width: 80%;
+}
+
+.sectors-section {
+  padding: 5px 0 0; 
+  text-align: left;
+  position: relative;
+  width: 60%; 
+  margin: 0 auto;
+}
+
+.sectors-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%; 
+}
+
+.sector-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  height: 350px;
+}
+
+.sector-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.sector-card:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* .investment-opportunities {
+  background: #f9f9f9;
+  padding: 80px 20px;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.intro {
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.intro h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #126b55;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: #444;
+}
+
+.highlight-title {
+  display: inline-block;
+  background: white;
+  color: #007a2f;
+  padding: 8px 16px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border-left: 5px solid #007a2f;
+}
+
+.sectors-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.sector-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 380px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.sector-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.sector-card:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.sector-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .sector-number {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #aad576;
+  margin-bottom: 8px;
+}
+
+.overlay h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .intro h2 {
+    font-size: 2rem;
+  }
+
+  .overlay .sector-number {
+    font-size: 1.8rem;
+  }
+
+  .overlay h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectors-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  .sector-card {
+    height: 300px;
+  }
+} */
+.investment-opportunities {
+  background: #f9f9f9;
+  padding: 80px 20px;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  padding:200px;
+}
+.investment_container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro {
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.intro h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #126b55;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.highlight-title {
+  display: inline-block;
+  background: white;
+  color: #007a2f;
+  padding: 8px 16px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border-left: 5px solid #007a2f;
+}
+
+.sectors-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sector-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 380px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.sector-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.sector-card:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.sector-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .sector-number {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #aad576;
+  margin-bottom: 8px;
+}
+
+.overlay h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Animation using AOS */
+[data-aos] {
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-duration: 0.8s;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .sectors-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sector-card {
+    height: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro h2 {
+    font-size: 2rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .overlay .sector-number {
+    font-size: 1.8rem;
+  }
+
+  .overlay h3 {
+    font-size: 1.1rem;
+  }
+
+  .sector-card {
+    height: 300px;
+  }
+}
+
+
+
+
+

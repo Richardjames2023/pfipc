@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Main section styling */
+.testimonials {
+  background: url('./hshake.jpg') center/cover no-repeat; /* Replace with actual path to the handshake image */
+  background-blend-mode: overlay;
+  background-color: rgba(0, 68, 33, 0.8); /* Dark green overlay */
+  color: #ffffff;
+  padding: 60px 30px;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+/* Content wrapper */
+.testimonial-content {
+  max-width: 600px;
+  text-align: left;
+}
+
+.testimonial-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #e0e0e0; /* Slightly lighter text color */
+}
+
+.testimonial-author {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #b0c4b1; /* Light green color for the author's name */
+  margin-bottom: 20px;
+}
+
+/* Navigation arrows */
+.navigation-arrows {
+  display: flex;
+  gap: 20px;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.arrow:hover {
+  color: #a5d6a7; /* Hover color for the arrows */
+}
+
+.left-arrow {
+  margin-right: auto;
+}
+
+.right-arrow {
+  margin-left: auto;
+}

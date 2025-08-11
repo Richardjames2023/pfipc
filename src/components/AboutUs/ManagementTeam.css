@@ -1,0 +1,124 @@
+/* Management Team Section Styling */
+.management-team-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Header Section */
+  .management-team-header {
+    background: linear-gradient(to right, #2c6e49, #a65021);
+    color: white;
+    padding: 60px 40px;
+    border-radius: 10px 10px 0 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .management-team-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .management-team-header p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  /* Background logo shadow */
+  .management-team-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 10%;
+    width: 200px;
+    height: 200px;
+    background-image: url('logo.png'); /* Replace with actual logo path */
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    z-index: -1;
+  }
+  
+  /* Team Member Section */
+  .team-member {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-top: 1px solid #ddd;
+    position: relative;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Position the first member to overlap with header */
+  .team-member-first {
+    margin-top: -50px;
+    z-index: 2;
+  }
+  
+  /* Image placeholder */
+  .team-member-image {
+    flex: 1;
+    max-width: 200px;
+    margin-right: 40px;
+  }
+  
+  .image-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #8a4a3d;
+    border-radius: 8px;
+  }
+  
+  /* Info Section */
+  .team-member-info {
+    flex: 2;
+  }
+  
+  .team-member-info h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 5px;
+  }
+  
+  .team-member-role {
+    font-size: 1.1rem;
+    color: #4e8a4a;
+    margin-bottom: 10px;
+  }
+  
+  .team-member-info p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #666666;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .team-member {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .team-member-image {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  
+    .management-team-header,
+    .team-member {
+      padding: 20px;
+    }
+  }
+  

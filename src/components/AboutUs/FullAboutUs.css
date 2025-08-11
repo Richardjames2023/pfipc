@@ -1,0 +1,92 @@
+/* Container for Full About Us section */
+.full-about-us {
+    display: flex;
+    align-items: center;
+    padding: 60px 40px;
+    background-color: #ffffff;
+    position: relative;
+  }
+  
+  /* Container for overlapping images */
+  .about-us-images {
+    position: relative;
+    margin-right: 40px;
+  }
+  
+  .about-us-image-1 {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    z-index: 1;
+  }
+  
+  .about-us-image-2 {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Content styling */
+  .about-us-content {
+    max-width: 600px;
+  }
+  
+  .section-subtitle {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #004d00; /* Dark green */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  .section-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #666666;
+    margin-bottom: 20px;
+  }
+  
+  /* Strong text styling */
+  .section-text strong {
+    color: #004d00; /* Emphasize important text */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .full-about-us {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-us-images {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .about-us-image-1 {
+      position: static;
+      margin-bottom: 10px;
+    }
+  
+    .about-us-image-2 {
+      position: static;
+    }
+  }
+  

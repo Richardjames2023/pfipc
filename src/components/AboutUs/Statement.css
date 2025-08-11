@@ -1,0 +1,88 @@
+/* Container for the Statement section */
+.statement-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Grid container for statements */
+  .statement-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  /* Individual statement item */
+  .statement-item {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  /* Title styling */
+  .statement-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #004d00; /* Dark green color */
+    margin-bottom: 10px;
+  }
+  
+  /* Description styling */
+  .statement-description {
+    font-size: 1rem;
+    color: #666666;
+    line-height: 1.6;
+  }
+  
+  /* Vertical lines and circular dots */
+  .statement-container::before,
+  .statement-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #ddd;
+  }
+  
+  .statement-container::before {
+    left: 33.33%; /* First vertical line */
+  }
+  
+  .statement-container::after {
+    left: 66.66%; /* Second vertical line */
+  }
+  
+  /* Circular dots on the lines */
+  .statement-item::before,
+  .statement-item::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+  }
+  
+  .statement-item:nth-child(1)::before {
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .statement-item:nth-child(2)::before {
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .statement-item:nth-child(3)::before {
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  

@@ -1,0 +1,45 @@
+/* Container for the divider */
+.divider-container {
+    position: relative;
+    width: 75%; /* Adjusted to cover 75% of the page */
+    margin: 20px auto;
+  }
+  
+  /* Main line styling */
+  .line {
+    height: 1px;
+    background-color: #ddd;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  /* Circle styling */
+  .circle {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+  }
+  
+  /* Position circles evenly */
+  .circle-left {
+    left: 0;
+  }
+  
+  .circle-center {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .circle-right {
+    right: 0;
+  }
+  

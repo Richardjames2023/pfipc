@@ -1,23 +1,11 @@
 import React from 'react';
-import WhyInvest from '../components/HomePage/WhyInvest';
-import KeyAdvantages from '../components/HomePage/KeyAdvantages';
-import AboutUs from '../components/HomePage/AboutUs';
-import LegalFramework from '../components/HomePage/LegalFframework';
-// import Banner from '../components/HomePage/Banner';
-import OurServices from '../components/HomePage/OurServices';
 import LatestPosts from '../components/HomePage/LatestPosts';
-import Testimonials from '../components/HomePage/Testimonials';
 import InvestmentOpportunities from '../components/HomePage/InvestmentOpportunities';
 import Carousel from '../components/Global/Carousel';
 import coinPlant from "../assets/pfipc.jpg";
 import row from "../assets/pficp2.jpeg";
 import ServicesCarousel from '../components/ServicesCarousel';
-import CombinedSection from "../components/CombinedSection"
-import JoinOurTeam from '../components/JoinOurTeam';
 import ServicesSection from '../components/ServicesSection';
-import AccessibleHero from '../components/AccessibleHero';
-import YellowBanner from '../components/YellowBanner';
-import Service_yellow from "../components/Service_yellow"
 import ClientLogos from '../components/ClientLogos';
 import BottomContentGrid from '../components/BottomContentGrid';
 
@@ -61,21 +49,11 @@ return (
     <div>
       <Carousel slides={slides} />
       <ServicesCarousel/>
-      {/* <Banner /> */}
-      <WhyInvest />
-      {/* <Service_yellow/> */}
       <ServicesSection/>
-      {/* <KeyAdvantages />
-      <JoinOurTeam/> */}
       <InvestmentOpportunities />
       <LatestPosts />
       <BottomContentGrid/>
       <ClientLogos/>
-      {/* <AboutUs />
-      <LegalFramework /> */}
-      {/* <CombinedSection/> */}
-      {/* <OurServices /> */}
-      {/* <Testimonials /> */}
 
     </div>
 )
