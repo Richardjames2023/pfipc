@@ -8,6 +8,7 @@ import ServicesCarousel from '../components/ServicesCarousel';
 import ServicesSection from '../components/ServicesSection';
 import ClientLogos from '../components/ClientLogos';
 import BottomContentGrid from '../components/BottomContentGrid';
+import WhyInvest from '../components/HomePage/WhyInvest';
 
 
 
@@ -49,6 +50,7 @@ return (
     <div>
       <Carousel slides={slides} />
       <ServicesCarousel/>
+      <WhyInvest/>
       <ServicesSection/>
       <InvestmentOpportunities />
       <LatestPosts />

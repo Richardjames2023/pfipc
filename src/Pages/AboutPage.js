@@ -1,7 +1,7 @@
 import React from 'react';
 import Carousel from '../components/Global/Carousel';
-import coinPlant from "../assets/pfipc.jpg";
-import row from "../assets/pficp2.jpeg";
+import AboutImg from "../assets/1755009106591.jpeg";
+import AboutImg2 from "../assets/1755009126460.jpeg";
 import KeyAdvantages from '../components/HomePage/KeyAdvantages';
 import GoverningCouncil from '../components/GoverningCouncil';
 import ServicesCarousel from '../components/ServicesCarousel';
@@ -10,7 +10,7 @@ import ServicesCarousel from '../components/ServicesCarousel';
 function aboutUs(){
   const slides = [
     {
-      background: coinPlant,
+      background: AboutImg,
       content: (
         <div className="carousel-left">
           <h1>Your Gateway to Investment Opportunities in Nigeria</h1>
@@ -24,7 +24,7 @@ function aboutUs(){
       ),
     },
     {
-      background: row,
+      background: AboutImg2,
       content: (
         <div className="carousel-left">
           <h1>Understand the Investment Opportunities Available in Nigeria</h1>
