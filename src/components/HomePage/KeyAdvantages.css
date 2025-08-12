@@ -1,50 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500&display=swap');
+
 .key-advantages {
-  padding: 60px 20px;
-  background-color: #ebefee;
+  padding: 80px 20px;
+  position: relative;
   text-align: center;
   font-family: 'Playfair Display', serif;
+  color: #006b35;
+  z-index: 1;
+  overflow: hidden;
+  background-color: #ebefee;
 }
 
-.keyadvantage-section-title {
-  font-size: 2.2rem;
+.key-advantages::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.key-section-title {
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 40px;
   color: #126b55;
 }
 
-.keyadvantage-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding-bottom: 40px;
 }
 
-.keyadvantage-grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 16px;
-}
-
-.keyadvantage-flip-card {
+.flip-card {
   background: transparent;
+  width: 280px;
   height: 360px;
   perspective: 1200px;
+  cursor: pointer;
+  flex-shrink: 0;
 }
 
-.keyadvantage-flip-inner {
+.flip-inner {
   position: relative;
   width: 100%;
   height: 100%;
   transition: transform 1s;
   transform-style: preserve-3d;
-}
-.keyadvantage-flip-back{
-  color:#fff;
-  margin: 0px 0;
+  transform-origin: center;
 }
 
-.keyadvantage-flip-front,
-.keyadvantage-flip-back {
+.flip-card.active .flip-inner,
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border-radius: 16px;
   backface-visibility: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
@@ -53,60 +73,92 @@
   justify-content: center;
   align-items: center;
   padding: 30px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  transition: all 0.3s ease;
   overflow: hidden;
 }
 
-/* Overlay effect */
-.keyadvantage-flip-front::before,
-.keyadvantage-flip-back::before {
+/* Background image layer */
+.flip-front::before,
+.flip-back::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.9); /* dark overlay */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.7;
   z-index: 0;
 }
 
-.keyadvantage-flip-front > *,
-.keyadvantage-flip-back > * {
-  position: relative;
+/* Overlay tint layer */
+.flip-front::after,
+.flip-back::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust opacity/tint color here */
   z-index: 1;
 }
 
-/* Different backgrounds for each card */
-.keyadvantage-flip-card:nth-child(1) .keyadvantage-flip-front,
-.keyadvantage-flip-card:nth-child(1) .keyadvantage-flip-back {
-  background-image: url('../../assets/Agric2.webp');
+/* Card-specific images */
+.flip-card:nth-child(1) .flip-front::before,
+.flip-card:nth-child(1) .flip-back::before {
+  background-image: url('../../assets/Dangote_refinery.jpg');
 }
 
-.keyadvantage-flip-card:nth-child(2) .keyadvantage-flip-front,
-.keyadvantage-flip-card:nth-child(2) .keyadvantage-flip-back {
+.flip-card:nth-child(2) .flip-front::before,
+.flip-card:nth-child(2) .flip-back::before {
   background-image: url('../../assets/agricultura.jpg');
 }
 
-.keyadvantage-flip-card:nth-child(3) .keyadvantage-flip-front,
-.keyadvantage-flip-card:nth-child(3) .keyadvantage-flip-back {
-  background-image: url('../../assets/dg.png');
+.flip-card:nth-child(3) .flip-front::before,
+.flip-card:nth-child(3) .flip-back::before {
+  background-image: url('../../assets/manufacturing.jpg');
 }
 
+/* Keep actual content above overlay */
+.flip-front > *,
+.flip-back > * {
+  position: relative;
+  z-index: 2;
+}
 
-.keyadvantage-card-number {
-  font-size: 3rem;
+.flip-front {
+  background-color: #fff;
+  z-index: 2;
+}
+
+.card-number {
+  font-size: 4rem;
   font-weight: bold;
   color: #ccc;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
-.keyadvantage-card-title {
-  font-size: 1.2rem;
+.card-title {
+  font-size: 1.3rem;
   color: #fff;
 }
 
+.flip-back {
+  background-color: #007a2f;
+  color: #fff;
+  transform: rotateY(180deg);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
 @media (max-width: 768px) {
-  .keyadvantage-card-title {
-    font-size: 1rem;
+  .grid-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flip-card {
+    width: 90%;
+    max-width: 300px;
   }
 }
+
+
 

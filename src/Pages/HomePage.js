@@ -4,7 +4,7 @@ import InvestmentOpportunities from '../components/HomePage/InvestmentOpportunit
 import Carousel from '../components/Global/Carousel';
 import coinPlant from "../assets/pfipc.jpg";
 import row from "../assets/pficp2.jpeg";
-import ServicesCarousel from '../components/ServicesCarousel';
+// import ServicesCarousel from '../components/ServicesCarousel';
 import ServicesSection from '../components/ServicesSection';
 import ClientLogos from '../components/ClientLogos';
 import BottomContentGrid from '../components/BottomContentGrid';
@@ -49,7 +49,7 @@ function HomePage(){
 return (
     <div>
       <Carousel slides={slides} />
-      <ServicesCarousel/>
+      {/* <ServicesCarousel/> */}
       <WhyInvest/>
       <ServicesSection/>
       <InvestmentOpportunities />
