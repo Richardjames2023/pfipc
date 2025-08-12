@@ -125,18 +125,18 @@ const ServicesSection = () => {
           outcomes.
         </p>
 
-        <div className="divider"></div>
-    
-        <div className="services-2-grid">
-          {services.map((service, index) => (
-            <div className="services-2-card" key={index}>
-              <div className="services-2-icon-circle">
-                {service.icon}
+        <div className="services-2-divider">
+          <div className="services-2-grid">
+            {services.map((service, index) => (
+              <div className="services-2-card" key={index}>
+                <div className="services-2-icon-circle">
+                  {service.icon}
+                </div>
+                <h3 className="services-2-title">{service.title}</h3>
+                <p className="services-2-description">{service.description}</p>
               </div>
-              <h3 className="services-2-title">{service.title}</h3>
-              <p className="services-2-description">{service.description}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
