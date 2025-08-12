@@ -127,4 +127,15 @@
       font-size: 0.95rem;
     }
   }
+
+  
+  @media (max-width: 480px) {
+    .carousel-content h1 {
+      font-size: 1.5rem;
+    }
+    .carousel-content p {
+      width:390px;
+      font-size: 1.2rem;
+    }
+  }
   
